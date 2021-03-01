@@ -22,8 +22,9 @@ class Division {
         
         // loop as many times as the parameter "size" says to create Students and add them to the students property
         
-        for i in 0...(size-1) {
-            division.students[i] = Student(forename: "child\(i)", surname: "student\(i)", birthday: Date() )
+        for i in 1...size {
+            let tempStudent = Student(forename: "child\(i)", surname: "student\(i)", birthday: Date() )
+            division.students.append(tempStudent)
         }
         
         return division
