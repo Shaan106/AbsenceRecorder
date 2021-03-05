@@ -10,11 +10,11 @@ import SwiftUI
 struct ContentView: View {
     
     var divisions: [Division]
-    var currentDate: Date = Date()
+    @State private var currentDate: Date = Date()
     
     var body: some View {
 
-        //Navigation View allows headersπ
+        //Navigation View allows headers
         NavigationView {
             
             // to show list of items use the List() method. The id is what is used to identify each unique item in list. self.code is always unique so can use that
@@ -27,6 +27,18 @@ struct ContentView: View {
                     .padding()
             }
             .navigationTitle(currentDate.getShortDate())
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: { currentDate = currentDate.previousDay() }) {
+                        Image(systemName: "arrow.backward")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: { currentDate = currentDate.nextDay() }) {
+                        Image(systemName: "arrow.forward")
+                    }
+                }
+            }
         }
         
     }
