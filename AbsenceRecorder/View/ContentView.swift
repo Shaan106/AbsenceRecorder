@@ -23,8 +23,9 @@ struct ContentView: View {
                 // the division in is just saying you can refer to items in divisions as division rather than $divisions
                 //closure explains how to format every item inside List
                 
-                Text("\(division.code)")
-                    .padding()
+                //the following leads to the divisionItem swift file and runs the view there
+                DivisionItem(division: division)
+                
             }
             .navigationTitle(currentDate.getShortDate())
             .toolbar {
