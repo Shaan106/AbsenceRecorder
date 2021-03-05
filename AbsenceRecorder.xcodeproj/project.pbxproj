@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD537EB025F1621900458CFB /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD537EAF25F1621900458CFB /* Date.swift */; };
 		CD7DBF0125ED4CEC006AAF6A /* AbsenceRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DBF0025ED4CEC006AAF6A /* AbsenceRecorderApp.swift */; };
 		CD7DBF0325ED4CEC006AAF6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DBF0225ED4CEC006AAF6A /* ContentView.swift */; };
 		CD7DBF0525ED4CED006AAF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7DBF0425ED4CED006AAF6A /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD537EAF25F1621900458CFB /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		CD7DBEFD25ED4CEC006AAF6A /* AbsenceRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbsenceRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7DBF0025ED4CEC006AAF6A /* AbsenceRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceRecorderApp.swift; sourceTree = "<group>"; };
 		CD7DBF0225ED4CEC006AAF6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD537EAE25F161D700458CFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD537EAF25F1621900458CFB /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CD7DBEF425ED4CEC006AAF6A = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		CD7DBEFF25ED4CEC006AAF6A /* AbsenceRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				CD537EAE25F161D700458CFB /* Extensions */,
 				CD7DBF2F25ED4F21006AAF6A /* View */,
 				CD7DBF2E25ED4F18006AAF6A /* Model */,
 				CD7DBF0025ED4CEC006AAF6A /* AbsenceRecorderApp.swift */,
@@ -282,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7DBF0325ED4CEC006AAF6A /* ContentView.swift in Sources */,
+				CD537EB025F1621900458CFB /* Date.swift in Sources */,
 				CD7DBF3125ED4F79006AAF6A /* Student.swift in Sources */,
 				CD7DBF3925ED5028006AAF6A /* Division.swift in Sources */,
 				CD7DBF0125ED4CEC006AAF6A /* AbsenceRecorderApp.swift in Sources */,
