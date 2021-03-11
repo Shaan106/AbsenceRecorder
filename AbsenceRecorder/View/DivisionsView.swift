@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DivisionsView: View {
     
     var divisions: [Division]
     @State private var currentDate: Date = Date()
@@ -23,9 +23,12 @@ struct ContentView: View {
                 // the division in is just saying you can refer to items in divisions as division rather than $divisions
                 //closure explains how to format every item inside List
                 
-                //the following leads to the divisionItem swift file and runs the view there
-                DivisionItem(division: division)
+                //The following creates a navigation link to another view
                 
+                NavigationLink(destination: AbsenceView(division: division) ){
+                    //the following leads to the divisionItem swift file and runs the view there
+                    DivisionItem(division: division)
+                }
             }
             .navigationTitle(currentDate.getShortDate())
             .toolbar {
@@ -48,6 +51,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(divisions: Division.examples)
+        DivisionsView(divisions: Division.examples)
     }
 }
