@@ -12,6 +12,7 @@ struct AbsenceRecorderApp: App {
     var body: some Scene {
         WindowGroup {
             RootTabView()
+                .environmentObject( StateController() )
         }
     }
 }

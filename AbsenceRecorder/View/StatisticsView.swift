@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct StatisticsView: View {
+    
+    @EnvironmentObject var state: StateController
+    
     var body: some View {
         Text("Statistics")
     }

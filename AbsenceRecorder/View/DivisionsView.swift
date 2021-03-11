@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DivisionsView: View {
     
-    var divisions: [Division]
+    @EnvironmentObject var state: StateController
     @State private var currentDate: Date = Date()
     
     var body: some View {
@@ -19,7 +19,7 @@ struct DivisionsView: View {
             
             // to show list of items use the List() method. The id is what is used to identify each unique item in list. self.code is always unique so can use that
 
-            List(divisions, id: \.self.code) { division in
+            List(state.divisions, id: \.self.code) { division in
                 // the division in is just saying you can refer to items in divisions as division rather than $divisions
                 //closure explains how to format every item inside List
                 
@@ -51,6 +51,7 @@ struct DivisionsView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DivisionsView(divisions: Division.examples)
+        DivisionsView()
+            .environmentObject( StateController() )
     }
 }
