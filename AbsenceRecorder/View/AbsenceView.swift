@@ -11,7 +11,11 @@ struct AbsenceView: View {
     let division: Division
     
     var body: some View {
-        Text("Absence View - \(division.code)")
+        
+        List(division.students, id: \.self.forename) { student in
+            AbsenceItem(studentAbsence: StudentAbsence(student: student))
+        }
+        
     }
 }
 

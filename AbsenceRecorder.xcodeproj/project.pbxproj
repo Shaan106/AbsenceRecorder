@@ -12,6 +12,8 @@
 		CD10F5D425FAB87300244FE2 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10F5D325FAB87300244FE2 /* StatisticsView.swift */; };
 		CD1CFC5425F2879E00121803 /* DivisionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1CFC5325F2879E00121803 /* DivisionItem.swift */; };
 		CD537EB025F1621900458CFB /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD537EAF25F1621900458CFB /* Date.swift */; };
+		CD623BD525FBDA9C00EAAEC9 /* AbsenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD623BD425FBDA9C00EAAEC9 /* AbsenceItem.swift */; };
+		CD623BDD25FBDDCF00EAAEC9 /* StudentAbsence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD623BDC25FBDDCF00EAAEC9 /* StudentAbsence.swift */; };
 		CD7DBF0125ED4CEC006AAF6A /* AbsenceRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DBF0025ED4CEC006AAF6A /* AbsenceRecorderApp.swift */; };
 		CD7DBF0325ED4CEC006AAF6A /* DivisionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DBF0225ED4CEC006AAF6A /* DivisionsView.swift */; };
 		CD7DBF0525ED4CED006AAF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7DBF0425ED4CED006AAF6A /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		CD10F5D325FAB87300244FE2 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		CD1CFC5325F2879E00121803 /* DivisionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionItem.swift; sourceTree = "<group>"; };
 		CD537EAF25F1621900458CFB /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		CD623BD425FBDA9C00EAAEC9 /* AbsenceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceItem.swift; sourceTree = "<group>"; };
+		CD623BDC25FBDDCF00EAAEC9 /* StudentAbsence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAbsence.swift; sourceTree = "<group>"; };
 		CD7DBEFD25ED4CEC006AAF6A /* AbsenceRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbsenceRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7DBF0025ED4CEC006AAF6A /* AbsenceRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceRecorderApp.swift; sourceTree = "<group>"; };
 		CD7DBF0225ED4CEC006AAF6A /* DivisionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionsView.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			children = (
 				CD7DBF3025ED4F79006AAF6A /* Student.swift */,
 				CD7DBF3825ED5028006AAF6A /* Division.swift */,
+				CD623BDC25FBDDCF00EAAEC9 /* StudentAbsence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				CD7DBF0225ED4CEC006AAF6A /* DivisionsView.swift */,
 				CD1CFC5325F2879E00121803 /* DivisionItem.swift */,
 				CD10F5C925FAB52800244FE2 /* AbsenceView.swift */,
+				CD623BD425FBDA9C00EAAEC9 /* AbsenceItem.swift */,
 				CD10F5CE25FAB7B300244FE2 /* RootTabView.swift */,
 				CD10F5D325FAB87300244FE2 /* StatisticsView.swift */,
 			);
@@ -310,7 +316,9 @@
 				CD7DBF0325ED4CEC006AAF6A /* DivisionsView.swift in Sources */,
 				CD537EB025F1621900458CFB /* Date.swift in Sources */,
 				CD10F5CF25FAB7B300244FE2 /* RootTabView.swift in Sources */,
+				CD623BDD25FBDDCF00EAAEC9 /* StudentAbsence.swift in Sources */,
 				CD7DBF3125ED4F79006AAF6A /* Student.swift in Sources */,
+				CD623BD525FBDA9C00EAAEC9 /* AbsenceItem.swift in Sources */,
 				CD10F5D425FAB87300244FE2 /* StatisticsView.swift in Sources */,
 				CD7DBF3925ED5028006AAF6A /* Division.swift in Sources */,
 				CD7DBF0125ED4CEC006AAF6A /* AbsenceRecorderApp.swift in Sources */,
