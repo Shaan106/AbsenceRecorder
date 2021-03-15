@@ -10,9 +10,27 @@ import Foundation
 class Division {
     let code: String
     var students: [Student] = []
+    var absences: [Absence] = []
     
     init(code: String) {
         self.code = code
+    }
+    
+    func getAbsence (for date: Date) -> Absence? {
+        return absences.first {
+            let comparision = Calendar.current.compare($0.takenOn, to: date, toGranularity: .day)
+            return comparision == .orderedSame
+        }
+    }
+    
+    func createAbsenceOrGetExistingIfAvailable(for date: Date) -> Absence {
+        if let existingAbsence = getAbsence(for: date) {
+            return existingAbsence
+        } else {
+            let absence = Absence(date: date, students: students)
+            absences.append(absence)
+            return absence
+        }
     }
     
     // only runs in debug mode, ie in xcode simulator

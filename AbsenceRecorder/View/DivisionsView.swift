@@ -25,7 +25,7 @@ struct DivisionsView: View {
                 
                 //The following creates a navigation link to another view
                 
-                NavigationLink(destination: AbsenceView(division: division) ){
+                NavigationLink(destination: AbsenceView(absence: division.createAbsenceOrGetExistingIfAvailable(for: currentDate))){
                     //the following leads to the divisionItem swift file and runs the view there
                     DivisionItem(division: division)
                 }
